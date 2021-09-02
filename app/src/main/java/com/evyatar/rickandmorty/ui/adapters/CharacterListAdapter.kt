@@ -7,30 +7,33 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.evyatar.rickandmorty.MainListener
 import com.evyatar.rickandmorty.R
-import kotlinx.android.synthetic.main.character_item.view.*
-
+import com.evyatar.rickandmorty.model.characterlistmodel.CharactersList
+import com.evyatar.rickandmorty.model.characterlistmodel.CharactersListItem
 import com.evyatar.rickandmorty.model.charactermodel.Result
 import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper
+import kotlinx.android.synthetic.main.character_item.view.*
+import kotlinx.android.synthetic.main.episodes_item.view.*
 
-
-class CharacterAdapter(
-    private var charactersList: List<Result>,
+class CharacterListAdapter(
+    private var charactersList: CharactersList,
     private val mainListener: MainListener
-) : RecyclerView.Adapter<CharactersViewHolder>() {
+) : RecyclerView.Adapter<CharacterListViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharactersViewHolder {
-        return CharactersViewHolder(LayoutInflater.from(parent.context), parent)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharacterListViewHolder {
+        return CharacterListViewHolder(LayoutInflater.from(parent.context), parent)
     }
 
-    override fun onBindViewHolder(holder: CharactersViewHolder, position: Int) {
-       holder.bind(charactersList[position], mainListener)
+    override fun onBindViewHolder(holder: CharacterListViewHolder, position: Int) {
+        holder.bind(charactersList[position], mainListener)
     }
 
     override fun getItemCount() = charactersList.size
+
 }
 
-class CharactersViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
+class CharacterListViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
     RecyclerView.ViewHolder(inflater.inflate(R.layout.character_item, parent, false)) {
+
     private var mCharacterImage: ImageView? = null
     private var mCharacterName: TextView? = null
 
@@ -39,10 +42,8 @@ class CharactersViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
         mCharacterName = itemView.character_name
     }
 
-    fun bind(
-        charactersList: Result,
-        mainListener: MainListener
-    ) {
+
+    fun bind(charactersList: Result, mainListener: MainListener) {
         UrlImageViewHelper.setUrlDrawable(mCharacterImage, charactersList.image)
         mCharacterName?.text = charactersList.name
         itemView.setOnClickListener {

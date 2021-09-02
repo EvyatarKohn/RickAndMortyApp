@@ -5,6 +5,21 @@
       <map>
         <entry key="..\:/Users/EVyat/StudioProjects/Rick/app/src/main/res/layout/character_item.xml" value="0.19739583333333333" />
         <entry key="..\:/Users/EVyat/StudioProjects/Rick/app/src/main/res/layout/main_fragment.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/EVyat/StudioProjects/rickAndMorty/app/src/main/res/drawable/button_sahpe.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/EVyat/StudioProjects/rickAndMorty/app/src/main/res/drawable/card_background.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/EVyat/StudioProjects/rickAndMorty/app/src/main/res/drawable/circle.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/EVyat/StudioProjects/rickAndMorty/app/src/main/res/drawable/circle_image.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/EVyat/StudioProjects/rickAndMorty/app/src/main/res/drawable/ic_rick_and_morty_logo.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/EVyat/StudioProjects/rickAndMorty/app/src/main/res/layout/character_info_fragment_layout.xml" value="0.3546875" />
+        <entry key="..\:/Users/EVyat/StudioProjects/rickAndMorty/app/src/main/res/layout/character_info_layout.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/EVyat/StudioProjects/rickAndMorty/app/src/main/res/layout/character_item.xml" value="0.1890625" />
+        <entry key="..\:/Users/EVyat/StudioProjects/rickAndMorty/app/src/main/res/layout/characters_fragment.xml" value="0.17346014492753623" />
+        <entry key="..\:/Users/EVyat/StudioProjects/rickAndMorty/app/src/main/res/layout/episode_detailes_layout.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/EVyat/StudioProjects/rickAndMorty/app/src/main/res/layout/episode_info_layout.xml" value="0.1890625" />
+        <entry key="..\:/Users/EVyat/StudioProjects/rickAndMorty/app/src/main/res/layout/episodes_item.xml" value="0.28940217391304346" />
+        <entry key="..\:/Users/EVyat/StudioProjects/rickAndMorty/app/src/main/res/layout/episodes_list_layout.xml" value="0.1890625" />
+        <entry key="..\:/Users/EVyat/StudioProjects/rickAndMorty/app/src/main/res/layout/main_activity.xml" value="0.1890625" />
+        <entry key="..\:/Users/EVyat/StudioProjects/rickAndMorty/app/src/main/res/layout/main_fragment.xml" value="0.1890625" />
       </map>
     </option>
   </component>

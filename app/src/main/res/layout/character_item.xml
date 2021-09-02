@@ -5,14 +5,13 @@
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="25dp"
     android:layout_marginTop="25dp"
-    android:layout_marginBottom="25dp"
-    android:background="@color/black"
+    android:background="@drawable/card_background"
     android:layoutDirection="ltr">
 
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingVertical="15dp"
+        android:paddingVertical="10dp"
         android:paddingHorizontal="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -31,7 +30,9 @@
             android:id="@+id/character_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:gravity="left"
+            android:fontFamily="@font/luckiest_guy"
+            android:textSize="13dp"
             android:textColor="@color/white"
             app:layout_gravity="center"
             app:layout_column="1"

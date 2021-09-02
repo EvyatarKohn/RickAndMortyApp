@@ -1,6 +1,22 @@
 <resources>
     <string name="app_name">Rick And Morty</string>
 
+    <string name="pick_a_character">Pick a character</string>
     <string name="character_request_error">Character request error</string>
+    <string name="episodes_request_error">Episodes request error</string>
+    <string name="app_name_title">Rick And\nMorty</string>
+    <string name="character_name">%1$s</string>
+    <string name="character_created">Created \n%1$s</string>
+    <string name="character_status">Status \n%1$s</string>
+    <string name="character_species">Species \n%1$s</string>
+    <string name="character_gender">Gender \n%1$s</string>
+    <string name="character_location">Location \n%1$s</string>
+    <string name="character_origin">Origin \n%1$s</string>
+    <string name="episodes_list_btn">Get character episodes list</string>
+    <string name="episodes_list_for_character">Character episodes list</string>
+    <string name="episode_name">%1$s (%2$s)</string>
+    <string name="episode_air_date">Air date\n%1$s</string>
+    <string name="episode_create_date">Create date\n%1$s</string>
+    <string name="other_characters_in_episode">Other characters\nin this episode:</string>
 
 </resources>

@@ -24,6 +24,7 @@ object AppModule {
     @Provides
     fun provideGsonBuilder(): Gson {
         return GsonBuilder()
+            .setLenient()
             .excludeFieldsWithoutExposeAnnotation()
             .create()
     }

@@ -9,21 +9,30 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.evyatar.rickandmorty.MainListener
+import com.evyatar.rickandmorty.MainViewModel
 import com.evyatar.rickandmorty.R
+import com.evyatar.rickandmorty.model.characterlistmodel.CharactersList
+import com.evyatar.rickandmorty.model.charactermodel.Characters
 import com.evyatar.rickandmorty.model.charactermodel.Result
 import com.evyatar.rickandmorty.ui.adapters.CharacterAdapter
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.main_fragment.*
+import kotlinx.android.synthetic.main.characters_fragment.*
 
 @AndroidEntryPoint
 class CharactersFragment : Fragment() {
+
     private val mViewModel: MainViewModel by viewModels()
     private lateinit var mMainListener: MainListener
     private lateinit var mCharacterAdapter: CharacterAdapter
+    private lateinit var mCharacterList: CharactersList
 
     companion object {
         fun newInstance(mainListener: MainListener) = CharactersFragment().apply {
             mMainListener = mainListener
+        }
+
+        fun newInstance(characterList: CharactersList) = CharactersFragment().apply {
+            mCharacterList = characterList
         }
     }
 
@@ -31,7 +40,7 @@ class CharactersFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val v = inflater.inflate(R.layout.main_fragment, container, false)
+        val v = inflater.inflate(R.layout.characters_fragment, container, false)
 
         mViewModel.getCharacterNamesAndImages()
 
@@ -46,6 +55,7 @@ class CharactersFragment : Fragment() {
         mCharacterAdapter = CharacterAdapter(charactersList, mMainListener)
         val layoutManager = LinearLayoutManager(activity?.applicationContext)
         characters_recycler_view.layoutManager = layoutManager
-        characters_recycler_view.adapter = mCharacterAdapter    }
+        characters_recycler_view.adapter = mCharacterAdapter
+    }
 
 }
